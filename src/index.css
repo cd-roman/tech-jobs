@@ -196,7 +196,7 @@ body::-webkit-scrollbar {
 /* BOOKMARKS BTN */
 .bookmarks-btn {
   text-transform: lowercase;
-  font-size: 13px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.75);
   margin-left: 13px;
   padding-left: 13px;
