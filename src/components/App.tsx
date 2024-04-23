@@ -1,5 +1,12 @@
+import Footer from "./Footer";
+
 function App() {
-  return <>Hello!</>;
+  return (
+    <>
+      Hello!
+      <Footer />
+    </>
+  );
 }
 
 export default App;

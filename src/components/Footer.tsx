@@ -2,13 +2,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <small>
-        <p>
-          © Copyright by{" "}
-          <a href="https://bytegrad.com" target="_blank">
-            ByteGrad.com
-          </a>
-          . Intended for learning or your portfolio.
-        </p>
+        <p>{getCurrentYear()} React demo app</p>
       </small>
 
       <p>
@@ -16,4 +10,8 @@ export default function Footer() {
       </p>
     </footer>
   );
+}
+
+function getCurrentYear() {
+  return new Date().getFullYear();
 }
