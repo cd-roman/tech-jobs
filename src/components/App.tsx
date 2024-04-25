@@ -10,6 +10,7 @@ import Sidebar, { SidebarTop } from "./Sidebar";
 import PaginationControls from "./PaginationControls";
 import ResultsCount from "./ResultsCount";
 import SortingControls from "./SortingControls";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
       </Container>
 
       <Footer />
+
+      <Toaster position="top-right" />
     </>
   );
 }
