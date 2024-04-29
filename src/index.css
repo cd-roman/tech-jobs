@@ -731,7 +731,7 @@ body::-webkit-scrollbar {
 .job-details__footer {
   margin-left: 42px;
   margin-right: 42px;
-  margin-top: 33px;
+  margin-top: 32px;
   padding-top: 13px;
   border-top: 1px solid #dce2e8;
 }
@@ -1127,10 +1127,6 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 
-  .job-details {
-    /* display: none; */
-  }
-
   .footer {
     max-width: 800px;
     padding-left: 0;
@@ -1149,6 +1145,21 @@ body::-webkit-scrollbar {
 
   .search__input {
     width: 100%;
+  }
+
+  .job-info {
+  }
+
+  .job-info__left {
+    padding-left: 16px;
+  }
+
+  .job-info__right {
+    padding-right: 16px;
+  }
+
+  .job-info__extras {
+    flex-wrap: wrap;
   }
 
   .footer {
@@ -1172,6 +1183,54 @@ body::-webkit-scrollbar {
   .first-heading {
     text-align: center;
     max-width: 400px;
+  }
+
+  .qualifications {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .reviews {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .job-details__footer {
+    margin: 32px 16px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-info {
+    padding-top: 100px;
+  }
+
+  .second-heading {
+    font-size: 20px;
+  }
+
+  .job-info__description {
+    margin-top: 32px;
+  }
+
+  .job-info__below-badge {
+    margin-top: 36px;
+  }
+
+  .qualifications {
+    flex-direction: column;
+  }
+
+  .qualifications__left {
+    padding-bottom: 20px;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+
+  .reviews__left {
+    padding-bottom: 20px;
   }
 }
 
