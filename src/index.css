@@ -244,6 +244,7 @@ body::-webkit-scrollbar {
 .job-list {
   background-color: #fff;
   position: relative;
+  min-height: 140px;
   /* height: 100%; */
   flex: 1;
   display: flex;
@@ -1097,7 +1098,7 @@ body::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 1009px) {
+@media (max-width: 1000px) {
   .body {
     padding: 0 12px;
     padding-bottom: 50px;
@@ -1112,7 +1113,7 @@ body::-webkit-scrollbar {
   .container {
     flex-direction: column;
     height: initial;
-    width: 100%;
+    width: 90%;
     max-width: 800px;
     border-radius: 8px;
     overflow: hidden;
@@ -1122,8 +1123,12 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 
+  .sidebar {
+    width: 100%;
+  }
+
   .job-details {
-    display: none;
+    /* display: none; */
   }
 
   .footer {
@@ -1139,7 +1144,7 @@ body::-webkit-scrollbar {
   }
 
   .search {
-    width: 100%;
+    width: 90%;
   }
 
   .search__input {
