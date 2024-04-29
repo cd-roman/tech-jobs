@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
-/* RESET */
+/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -72,7 +72,6 @@ body {
 }
 
 body::-webkit-scrollbar {
-  /* Chrome, Safari, Edge, Opera, All browsers on iOS */
   display: none;
 }
 
@@ -81,7 +80,6 @@ body::-webkit-scrollbar {
   font-size: 31px;
   font-weight: 400;
   color: #fff;
-
   font-size: 27px;
   display: none;
 }
@@ -137,7 +135,6 @@ body::-webkit-scrollbar {
   left: 0;
   z-index: -1;
   user-select: none;
-
   transform: scale(1.1);
 }
 
@@ -145,7 +142,6 @@ body::-webkit-scrollbar {
 .header {
   margin-bottom: 13px;
   position: relative;
-
   margin-bottom: 0;
 }
 
@@ -159,7 +155,6 @@ body::-webkit-scrollbar {
   position: relative;
   justify-content: center;
   padding-top: 40px;
-
   animation: intro 0.3s;
 }
 
@@ -171,7 +166,6 @@ body::-webkit-scrollbar {
   padding-left: 10px;
   transform: translateY(-2px);
   cursor: pointer;
-
   margin-right: 0;
 }
 
@@ -245,33 +239,27 @@ body::-webkit-scrollbar {
   background-color: #fff;
   position: relative;
   min-height: 140px;
-  /* height: 100%; */
   flex: 1;
   display: flex;
   flex-direction: column;
-
-  scrollbar-color: #cacdd0 #ffffff; /* Firefox */
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #cacdd0 #ffffff;
+  scrollbar-width: thin;
 }
 
 .job-list::-webkit-scrollbar {
-  /* Chrome, Safari, Edge, Opera, All browsers on iOS */
   width: 4px;
 }
 
 .job-list::-webkit-scrollbar-track {
-  /* Chrome, Safari, Edge, Opera, All browsers on iOS */
   background-color: #ffffff;
 }
 
 .job-list::-webkit-scrollbar-thumb {
-  /* Chrome, Safari, Edge, Opera, All browsers on iOS */
   background-color: #cacdd0;
   transition: all 0.2s;
 }
 
 .job-list::-webkit-scrollbar-thumb:hover {
-  /* Chrome, Safari, Edge, Opera, All browsers on iOS */
   background-color: #b1b4b8;
 }
 
@@ -280,8 +268,6 @@ body::-webkit-scrollbar {
 }
 
 .bookmarks-popover {
-  /* visibility: hidden; */
-  /* opacity: 0; */
   background-color: #fff;
   min-height: 76px;
   min-width: 340px;
@@ -293,46 +279,9 @@ body::-webkit-scrollbar {
   transform: translateX(-50%);
   transform-origin: left;
   transition: all 0.2s;
-  /* pointer-events: none; */
-
   position: fixed;
   left: 50%;
   top: 82px;
-}
-
-.job-list--bookmarks {
-  /* visibility: hidden; */
-  /* opacity: 0; */
-  min-height: 76px;
-  min-width: 340px;
-  width: 340px;
-  border-radius: 4px;
-  overflow: hidden;
-  z-index: 10;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
-  transform: translateX(-50%);
-  transform-origin: left;
-  transition: all 0.2s;
-  /* pointer-events: none; */
-
-  position: fixed;
-  left: 50%;
-  top: 82px;
-}
-
-.job-list--bookmarks > p {
-  font-size: 14px;
-  position: absolute;
-  top: 46%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.job-list--bookmarks:hover {
-  pointer-events: initial;
-  visibility: initial;
-  transform: scale(1) translateX(-50%);
-  opacity: 1;
 }
 
 .job-list--visible {
@@ -347,7 +296,6 @@ body::-webkit-scrollbar {
   cursor: pointer;
   transition: background-color 0.2s;
   background-color: #fff;
-  /* flex: 1; */
   height: 76px;
 }
 
@@ -374,7 +322,6 @@ body::-webkit-scrollbar {
   font-size: 13px;
   height: 46px;
   width: 38px;
-  /* background-color: #8dd335; */
   background-color: #dee3e9;
   border-radius: 5px;
   display: flex;
@@ -384,24 +331,11 @@ body::-webkit-scrollbar {
   margin-right: 13px;
 }
 
-/* .job-item:nth-child(4n + 2) .job-item__badge {
-  background-color: #3d87f1;
-}
-
-.job-item:nth-child(4n + 3) .job-item__badge {
-  background-color: #d2d631;
-}
-
-.job-item:nth-child(4n + 4) .job-item__badge {
-  background-color: #d96a46;
-} */
-
 .job-item__middle {
 }
 
 .job-item__company {
   font-size: 13px;
-  /* margin-bottom: 2px; */
   font-style: italic;
 }
 
@@ -435,7 +369,6 @@ body::-webkit-scrollbar {
 
 .job-item__right svg {
   font-size: 14px;
-
   cursor: pointer;
   color: #d7dbe0;
   transition: all 0.2s;
@@ -469,7 +402,6 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   row-gap: 33px;
-
   margin-top: 20px;
   row-gap: 20px;
 }
@@ -539,7 +471,7 @@ body::-webkit-scrollbar {
 /* CONTAINER */
 .container {
   margin: 0 12px;
-  margin-top: 27px;
+  margin-top: 28px;
   margin-left: auto;
   margin-right: auto;
   height: 616px;
@@ -729,10 +661,7 @@ body::-webkit-scrollbar {
 }
 
 .job-details__footer {
-  margin-left: 42px;
-  margin-right: 42px;
-  margin-top: 32px;
-  padding-top: 13px;
+  margin: 80px 42px 16px;
   border-top: 1px solid #dce2e8;
 }
 
@@ -967,8 +896,7 @@ body::-webkit-scrollbar {
 .footer {
   max-width: 1000px;
   padding: 0 12px;
-  margin: 0 auto;
-  margin-top: 15px;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1092,12 +1020,6 @@ body::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 1179px) {
-  .job-list--bookmarks {
-    right: 0;
-  }
-}
-
 @media (max-width: 1000px) {
   .body {
     padding: 0 12px;
@@ -1128,7 +1050,7 @@ body::-webkit-scrollbar {
   }
 
   .footer {
-    max-width: 800px;
+    width: 90%;
     padding-left: 0;
     padding-right: 0;
   }
@@ -1160,20 +1082,6 @@ body::-webkit-scrollbar {
 
   .job-info__extras {
     flex-wrap: wrap;
-  }
-
-  .footer {
-    justify-content: center;
-  }
-
-  .footer > small {
-    text-align: center;
-  }
-
-  .footer > p {
-    margin-left: 15px;
-    text-align: right;
-    display: none;
   }
 
   .intro {
@@ -1232,14 +1140,14 @@ body::-webkit-scrollbar {
   .reviews__left {
     padding-bottom: 20px;
   }
+
+  .bookmarks-popover {
+    min-width: initial;
+    width: 75%;
+  }
 }
 
 @media (max-width: 370px) {
-  .job-list--bookmarks {
-    width: 93vw;
-    min-width: initial;
-  }
-
   .job-item {
     width: 100%;
   }
