@@ -284,6 +284,34 @@ body::-webkit-scrollbar {
   top: 82px;
 }
 
+.bookmarks-popover-empty-message {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.bookmarks-popover-heading {
+  max-width: 275px;
+  width: 100%;
+  text-align: center;
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.bookmarks-popover-subheading {
+  color: #5e5e5e;
+  font-size: 14px;
+  max-width: 275px;
+  width: 100%;
+  text-align: center;
+}
+
 .job-list--visible {
   pointer-events: initial;
   visibility: initial;
@@ -1105,6 +1133,10 @@ body::-webkit-scrollbar {
 
   .job-details__footer {
     margin: 32px 16px 20px;
+  }
+
+  .bookmarks-popover-empty-message {
+    padding: 24px;
   }
 }
 
