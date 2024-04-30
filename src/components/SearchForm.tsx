@@ -16,6 +16,7 @@ export default function SearchForm() {
       </button>
 
       <input
+        name="search"
         value={searchText}
         onChange={(e) => {
           handleChangeSearchText(e.target.value);
