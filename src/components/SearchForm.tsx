@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { useSearchTextContext } from "../lib/hooks";
 
 export default function SearchForm() {
   const { searchText, handleChangeSearchText } = useSearchTextContext();
+
+  useEffect(() => {
+    handleChangeSearchText("React");
+  }, []);
 
   return (
     <form
