@@ -12,40 +12,64 @@ import ResultsCount from "./ResultsCount";
 import SortingControls from "./SortingControls";
 import { Toaster } from "react-hot-toast";
 import JobListSearch from "./JobListSearch";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NotFound from "./NotFound";
 
 function App() {
   return (
-    <>
-      <Background />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Background />
 
-      <Header>
-        <HeaderTop>
-          <Logo />
-          <BookmarksButton />
-        </HeaderTop>
+              <Header>
+                <HeaderTop>
+                  <Logo />
+                  <BookmarksButton />
+                </HeaderTop>
 
-        <SearchForm />
-      </Header>
+                <SearchForm />
+              </Header>
 
-      <Container>
-        <Sidebar>
-          <SidebarTop>
-            <ResultsCount />
-            <SortingControls />
-          </SidebarTop>
+              <Container>
+                <Sidebar>
+                  <SidebarTop>
+                    <ResultsCount />
+                    <SortingControls />
+                  </SidebarTop>
 
-          <JobListSearch />
+                  <JobListSearch />
 
-          <PaginationControls />
-        </Sidebar>
+                  <PaginationControls />
+                </Sidebar>
 
-        <JobItemContent />
-      </Container>
-
-      <Footer />
+                <JobItemContent />
+              </Container>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <>
+              <Background />
+              <Header>
+                <HeaderTop>
+                  <Logo />
+                </HeaderTop>
+              </Header>
+              <NotFound />
+            </>
+          }
+        />
+      </Routes>
 
       <Toaster position="top-right" />
-    </>
+    </BrowserRouter>
   );
 }
 
